@@ -5,8 +5,10 @@ lazy val root = project
   .settings(
     name := "scaliteTextile",
     version := "0.1.0-SNAPSHOT",
-
+    organization := "com.anglypascal",
     scalaVersion := scala3Version,
 
-    libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
+    libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test,
+
+    libraryDependencies += "com.anglypascal" %% "scalite" % "0.1.1-SNAPSHOT",
   )
